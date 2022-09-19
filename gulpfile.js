@@ -17,10 +17,10 @@ const imagemin = require('gulp-imagemin')
 const banner = [
   '/**',
   '/*!',
-  'Theme Name: wp-theme-prototype',
-  'Theme URI: https://www.example.com',
-  'Author: Jirayu Limjinda',
-  'Author URI: https://www.example.com',
+  'Theme Name: Juke dev',
+  'Theme URI: https://www.allmassgroup.com',
+  'Author: Thanaphol Sutham',
+  'Author URI: https://www.allmassgroup.com',
   'Description: Premium responsive WordPress theme for example.com',
   'Version: 1.0',
   'License: GNU General Public License v2 or later',
@@ -88,7 +88,7 @@ const vendorStyles = () =>
   gulp
     .src(
       [
-        // './node_modules/bootstrap/dist/css/bootstrap.min.css'
+         './node_modules/bootstrap/dist/css/bootstrap.min.css'
       ],
       { allowEmpty: true }
     )

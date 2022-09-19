@@ -1,9 +1,9 @@
 /**
 /*!
-Theme Name: wp-theme-prototype
-Theme URI: https://www.example.com
-Author: Jirayu Limjinda
-Author URI: https://www.example.com
+Theme Name: Juke dev
+Theme URI: https://www.allmassgroup.com
+Author: Thanaphol Sutham
+Author URI: https://www.allmassgroup.com
 Description: Premium responsive WordPress theme for example.com
 Version: 1.0
 License: GNU General Public License v2 or later
@@ -11,5 +11,5 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: grid-layout, custom-menu, featured-images, blog
 Text Domain: wpcourse
 */
-
+@font-face{font-family:Raleway;src:url(fonts/Raleway-Thin.woff2) format("woff2"),url(fonts/Raleway-Thin.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:Raleway;src:url(fonts/Raleway-ThinItalic.woff2) format("woff2"),url(fonts/Raleway-ThinItalic.woff) format("woff");font-weight:700;font-style:italic;font-display:swap}.header{padding:20px 0}.header .container{display:flex;flex-direction:row;align-items:center}.header-left{display:flex;align-items:center;flex:1;flex-direction:row}.header-left .site-logo{width:80px;height:80px;display:inline-block;margin-right:60px}.header-left .site-logo img{display:block;margin:auto}.header-left .site-navigation{margin:0;padding:0;list-style:none}.header-left .site-navigation li{display:inline-block;margin-right:30px}.header-left .site-navigation li:last-child{margin-right:0}.header-left .site-navigation li a{color:#000;text-decoration:none;cursor:pointer}.header-left .site-navigation li a:hover{color:#00704a}.header-right a{color:#000;text-decoration:none;cursor:pointer}.header-right a:hover{color:#00704a}
 /*# sourceMappingURL=style.css.map */
