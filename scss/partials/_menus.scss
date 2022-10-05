@@ -72,6 +72,7 @@
         margin: 0;
     }
 }
+
 .menu-type {
     h3 {
         font-size:  24px;
@@ -90,44 +91,61 @@
        flex-direction: row;
        align-items: flex-start;
        justify-content: flex-start;
-       .menu-item {
-        flex: 0 0 calc((100% - 30px)/3);
-        margin: 0 15px 0 0;
-        &:last-child{
-            margin-right: 0;
-        }
-        .menu-image {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 8px;
-            margin:  0 0 16px;
-        }
-        .menu-name {
-            font-size:  8px;
-            font-weight: bold;
-            margin: 0 0 12px;
-        }
-        .menu-description {
-            font-size:  14px;
-            margin: 0 0 12px;
-            line-height: 1.4;
-            color: $black;
-        }
-        .menu-action {
-            .menu-price {
-                text-align: right;
-            }
-            .menu-stock {
-                font-weight: bold;
-                &.in{
-                    color: $green;
-                }
-                &.out{
-                    color: $yellow;
-                }
-            }
-        }
-       }
+       
     }
 }
+.menu-list {
+    margin: 24px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    .menu-item {
+        flex: 0 0 calc((100% - 45px)/4);
+       margin: 0 15px 30px 0;
+        &:nth-child(4n){
+            margin-right: 0;
+        }
+    }
+}
+
+.menu-item {
+    flex: 0 0 calc((100% - 30px)/3);
+    margin: 0 15px 0 0;
+    &:last-child{
+        margin-right: 0;
+    }
+    .menu-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 8px;
+        margin:  0 0 16px;
+    }
+    .menu-name {
+        font-size:  8px;
+        font-weight: bold;
+        margin: 0 0 12px;
+    }
+    .menu-description {
+        font-size:  14px;
+        margin: 0 0 12px;
+        line-height: 1.4;
+        color: $black;
+    }
+    .menu-action {
+        .menu-price {
+            text-align: right;
+        }
+        .menu-stock {
+            font-weight: bold;
+            &.in{
+                color: $green;
+            }
+            &.out{
+                color: $yellow;
+            }
+        }
+    }
+   }

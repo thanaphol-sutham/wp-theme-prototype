@@ -7,12 +7,7 @@
     </section>
     <section class="menu-searchbox">
         <div class="container">
-            <form action="" class="form">
-                <div class="form-group group-with-button">
-                    <input type="text" name="" class="form-control" placeholder="eg. ลาเต้, มอคค่า, คาปู">
-                    <button type="button" class="btn btn-primary">Search</button>
-                </div>
-            </form>
+            <?php echo get_search_form()?>
         </div>
     </section>
 
