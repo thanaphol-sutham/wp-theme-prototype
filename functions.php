@@ -21,10 +21,13 @@ function wp_theme_setup() {
 	 * Register menu 
 	 * It will show up in Appearance > Menus
 	 */
-	// register_nav_menus( array(
-	// 	'top'    => __( 'Top Navigation', 'wp-theme-prototype' ),
-	// 	'social' => __( 'Footer Sitemap', 'wp-theme-prototype' ),
-	// ) );
+	register_nav_menus( array(
+		'top'    => __( 'Top Navigation', 'wp-theme-prototype' ),
+		'about' => __( 'About', 'wp-theme-prototype' ),
+		'story' => __( 'Story', 'wp-theme-prototype' ),
+		'site_map' => __( 'Sitemap', 'wp-theme-prototype' ),
+		'footer' => __( 'Footer', 'wp-theme-prototype' ),
+	) );
 	
 	/**
 	 * Enable html5 power for comment, gallery and caption element.
@@ -43,12 +46,14 @@ function wp_theme_register_script() {
 	 * Enqueue stylesheet that generated from gulp
 	 * first is vendor, second is your style.css
 	 */
+	
+	wp_enqueue_style('wp-vendor', get_theme_file_uri('/css/vendor/vendor.css'),array(),'1.0.0');
 	wp_enqueue_style('wp-style', get_stylesheet_uri(), array(), '1.0.0');
-	wp_enqueue_style('bootstrap', get_theme_file_uri('/css/vendor/vendor.css'),array(),'1.0.0');
 	/**
 	 * Register js script file(js/client.js) 
 	 * dependency on jQuery, and place this before close body tag
 	 */
+	wp_register_script('wp-vendor', get_theme_file_uri('/js/vendor/vendor.js'), array('jquery'), '1.0.0', true);
 	wp_register_script('wp-client', get_theme_file_uri('/js/compiled.js'), array('jquery'), '1.0.0', true);
 
 	/**
@@ -57,6 +62,7 @@ function wp_theme_register_script() {
 	 */
 	// $js_variables = array('homeURL' => home_url());
 	// wp_localize_script( 'wp-client', 'themeVariables', $js_variables );
+	wp_enqueue_script('wp-vendor');
 	wp_enqueue_script('wp-client');
 }
 add_action('wp_enqueue_scripts', 'wp_theme_register_script');

@@ -1,0 +1,43 @@
+.btn-primary {
+    padding: 10px 48px;
+    background-color: $green;
+    border-color: $green;
+
+    &:hover {
+        background-color: darkcyan($green, 10%) !important;
+        border-color: darkcyan($green, 10%) !important;
+    }
+
+    &:focus {
+        background-color: darkcyan($green, 10%) !important;
+        border-color: darkcyan($green, 10%) !important;
+    }
+
+    &:active {
+        background-color: darkcyan($green, 10%) !important;
+        border-color: darkcyan($green, 10%) !important;
+    }
+}
+
+.slick-dots {
+    bottom: 20px;
+
+    li {
+        &.slick-active {
+            button {
+                &:before {
+                    color: $white;
+                }
+            }
+        }
+
+        button {
+            padding: 0;
+
+            &:before {
+                font-size: 56px;
+                color: $white;
+            }
+        }
+    }
+}

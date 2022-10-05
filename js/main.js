@@ -4,4 +4,8 @@
 
 'use strict';
 
-console.log('hello World');
+jQuery('.slider-block').slick({
+    infinite: true,
+    dots: true
+  });
+      
